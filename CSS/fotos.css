@@ -1,0 +1,28 @@
+.contenedor-galeria{/*estilo de la parte principal*/
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 10000px;
+    margin: auto;
+}
+.galeria__img {/*diseño de las imagenes*/
+    width: 600px;
+    height: 400px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    filter: brightness(60%);
+    cursor: pointer;
+    animation: escalar 1.5s infinite alternate;
+}
+@keyframes escalar {/*efecto de las fotografias*/
+    to{
+      transform: scale(1);  
+    }
+    from{
+        transform: scale(1.02);
+    }
+}
+.galeria__img:hover {
+    filter: brightness(100%)
+}

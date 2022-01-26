@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario | Turismo La Paz</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/formulario.css">
+<link href="https://file.myfontastic.com/NiqmXzuoPwZquzdxaqSDSb/icons.css" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+</head>
+     <!-- Comienzo  de la  cabecera -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="logo">TURISMO LA PAZ</h1>
+            </div>
+        </div>
+    </header> 
+    <!-- navegacion de la pagina-->  
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <ul class="menu" id="menu">
+                <li class="menu-item"><a href="index.html" class="menu-link">INICIO</a></li>
+                <li class="menu-item"><a href="lugares.html" class="menu-link ">LUGARES</a></li>
+                <li class="menuitem"><a href="fotos.html" class="menu-link ">FOTOS</a></li>
+                <li class="menu-item"><a href="formulario.html" class="menu-link menu-link--select">FORMULARIO</a></li>
+            </ul>   
+        </div>
+    </nav>
+    <!-- banner -->
+    <section class="banner">
+        <img class="img" src="img/boliviahop.jpg" alt="" class="banner-img">
+        <div class="banner-content">Ciudad Maravilla</div>
+    </section>
+
+    <main class="main">
+        <section class="group group--color">
+                <div class="container">
+                    <h2 class="main-title">Comentanos</h2>
+            </div>
+        </section>
+    </main>
+  <!-- formato del formulario-->
+                    <div class="img-logo">
+                        <img src="IMG/logo-la-paz-me-gusta-01.png" alt="" class="logo-im">
+                    </div>
+     </section>
+
+     <div class="form">
+        <form action="php/guardar.php" method="POST">
+            <p>Nombre</p>
+            <label for="nombre"></label>
+            <br>
+            <input type="text" name="nombre" placeholder="Introduzca su nombre" required>
+            <p>Correo</p>
+            <label for="correo"></label>
+            <br>
+            <input type="email" name="correo" placeholder="alguien@gmail.com" required>
+            <p>Mensaje</p>
+            <label for="mensaje"></label>
+            <br>
+            <textarea name="mensaje" placeholder="Introduzca su mensaje" required></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+      <!-- Formato de la  cabecera final -->
+      <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column33">
+                <h2 class="column-tilte">TURISMO LA PAZ</h2>
+                <p class="p column-txt"><a href="index.html" class="link-abajo" > Inicio</a><p>
+                <p class="p column-txt"><a href="lugares.html" class="link-abajo" > Lugares</a><p>
+                <p class="p column-txt"><a href="fotos.html" class="link-abajo" > Fotos</a><p>
+                <p class="p column-txt"><a href="formulario.html" class="link-abajo" > Formulario</a><p>
+            </div>
+            <div class="column column33">
+                <h2 class="column-tilte">Envia tus comentarios a nuestro correo:</h2>
+                <p class="p column-txt">turismolapaz@gmail.com<p>
+            </div>
+            <div class="column column33">
+                <h2 class="column-tilte">Siguenos en nuestras paginas de:</h2>
+                <p class="p column-txt"><a href="https://es-la.facebook.com/" class="icono-facebook"></a>facebook<p>
+                <p class="p column-txt"><a href="https://twitter.com/login?lang=es" class="icono-twitter"></a>twiter<p>
+                <p class="p column-txt"><a href="https://www.youtube.com/feed/trending?bp=4gIuCggvbS8wMnZ4bhIiUEx6akZiYUZ6c21NVGE4bWxRWXZtS1l5QnFYSVJ1N0dnWA%3D%3D" class="icono-youtube"></a>youtube<p>
+            </div>
+            <p class="copy">LA PAZ TURISMO</p>
+        </div>
+    </footer>
+<script src="JS/formulario.js"> </script>
+</body>
+</html>
